@@ -7,8 +7,8 @@ const ShoppingList = (props) => {
     const { shopping, removeFromShoppingList } = props
     const [filter, setFilter] = useState("")
   
-    const filteredList = shopping.filter((el) =>
-      el.trim().toLowerCase().startsWith(filter.trim().toLowerCase())
+    const filteredList = shopping.filter((product) =>
+      product.trim().toLowerCase().startsWith(filter.trim().toLowerCase())
     )
     return (
       <>
